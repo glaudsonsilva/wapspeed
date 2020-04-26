@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "WhatsApp Speed",
+    "version": "0.1",
+    "description": "A simple to use whatsapp audio accelerator. Thanks to Programador Br (https://www.youtube.com/channel/UCrdgeUeCll2QKmqmihIgKBQ) for inspiration.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
